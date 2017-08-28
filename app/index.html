@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+</html>
+<body>
+  <div class="container">
+    <aside class="aside">
+      <h2 class="aside__title">CRM</h2>
+      <nav class="nav aside__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#"><i class="fa fa-tachometer" aria-hidden="true"></i><span class="nav__span">Dashboard</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="#"><i class="fa fa-pie-chart" aria-hidden="true"></i><span class="nav__span">Reports</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="#"><i class="fa fa-briefcase" aria-hidden="true"></i><span class="nav__span">Customers</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="#"><i class="fa fa-calendar" aria-hidden="true"></i><span class="nav__span">Calendar</span></a></li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="content">
+      <div class="topbar">
+        <div class="breadcrums"><a class="breadcrums__link" href="#">Customers</a><span class="breadcrums__arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></span><span class="customer__name--breadcrums">Max Jones</span>
+        </div>
+        <div class="topbar__left-container">
+          <form class="search">
+            <input class="search__input" type="text" placeholder="SEARCH">
+            <button class="search__button"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </form>
+          <div class="notifications"><i class="fa fa-bell" aria-hidden="true"></i>
+            <div class="notifications__amount">4</div>
+          </div>
+          <div class="user">
+            <div class="user__photo"><img class="photo" src="img/user.png" alt="userPhoto">
+            </div>
+            <div class="user__name"><span class="greeting">Hello</span><span class="name">Lauren</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="main">
+        <div class="customer">
+          <div class="customer__photo"><img class="photo" src="img/customer.png" alt="customerPhoto">
+          </div>
+          <div class="customer__info info">
+            <div class="info__about">
+              <div class="customer__name"><span>Max Jones</span><span class="customer__status">gold</span>
+              </div>
+              <p class="position">Sales & Marketing</p>
+            </div>
+            <div class="info__contacts">
+              <div class="phone">
+                <div class="phone__title">Phone</div><a class="phone__number" href="tel:(+31) 140 175 468">(+31) 140 175 468</a>
+              </div>
+              <div class="address">
+                <div class="address__title">Address</div><a class="address__link" href="https://goo.gl/maps/8r9CYrP8j9A2" target="_blank">Binnenweg 50, Rotterdam</a>
+              </div>
+              <button class="btn">create quote</button>
+            </div>
+          </div>
+        </div>
+        <div class="tabs">
+          <ul class="tabs__list">
+            <li class="tabs__item"><a class="tabs__link">Overview</a></li>
+            <li class="tabs__item"><a class="tabs__link">Orders</a></li>
+            <li class="tabs__item"><a class="tabs__link">Payments</a></li>
+          </ul>
+        </div>
+      </main>
+      <div class="base"></div>
+    </div>
+  </div>
+</body>

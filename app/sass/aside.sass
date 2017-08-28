@@ -1,0 +1,53 @@
+.aside
+  background-color: $tabs_color
+  width: 23.2%
+
+.aside__title
+  color: $gold
+  font-size: 28px
+  font-weight: lighter
+  margin: 40px 25px
+
+.aside__nav
+  margin-top: 47px
+
+.nav__list
+  padding-left: 0
+
+.nav__link
+  color: $aside_items_color
+  font-size: $aside_items_font_size
+  font-weight: lighter
+  display: block
+  padding: 19px 27px
+  position: relative
+
+  &:hover
+    background-color: $theme_color
+
+  .fa
+    font-size: 22px
+
+  &:after
+    content: ""
+    width: 90%
+    border-top: 1px solid #363d46
+    border-bottom: 1px solid #3d444d
+    position: absolute
+    bottom: 0
+    left: 5%
+
+.nav__link:hover:before
+  content: ""
+  width: 5px
+  background-color: $gold
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+
+.nav__span
+  margin-left: 20px
+
+.base
+  background-color: #ededed

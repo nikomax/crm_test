@@ -1,0 +1,61 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        block title
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,400")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="css/main.css")
+body
+    div.container
+        include aside
+        div.content
+            div.topbar
+                div.breadcrums
+                    block breadcrumsLink
+                    span.breadcrums__arrow
+                        i(aria-hidden="true").fa.fa-chevron-right
+                    block breadcrumsCustomer
+                div.topbar__left-container
+                    form.search
+                        input(type="text", placeholder="SEARCH").search__input
+                        button.search__button
+                            i(aria-hidden="true").fa.fa-search
+                    div.notifications
+                        i(aria-hidden="true").fa.fa-bell
+                        div.notifications__amount 4
+                    div.user
+                        div.user__photo
+                            block userPhoto
+                        div.user__name
+                            span.greeting Hello
+                            block userName
+            main.main
+                div.customer
+                    div.customer__photo
+                        block customerPhoto
+                    div.customer__info.info
+                        div.info__about
+                            div.customer__name
+                                block customerName
+                                block customerStatus
+                            block customerPosition
+                        div.info__contacts
+                            div.phone
+                                div.phone__title Phone
+                                block phoneNumber
+                            div.address
+                                div.address__title Address
+                                block addressLink
+                            button.btn create quote
+                div.tabs
+                    ul.tabs__list
+                        li.tabs__item
+                            a.tabs__link Overview
+                        li.tabs__item
+                            a.tabs__link Orders
+                        li.tabs__item
+                            a.tabs__link Payments
+            div.base
